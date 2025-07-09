@@ -6,14 +6,12 @@ date:   2025-07-09 21:11:01 +0200
 categories: projects
 ---
 
-
+# LVM
 It seems like LVM is completely unnecessary if the installation consists of only 2 partitions, of which only 1 is encrypted. 
 Somehow I have assumed that LVM is necessary when using LUKS, which I now understand is not true. 
 All my previous experience with manual partitioning in Linux have been dual boots with macOS, else I’ve just used automatic partitioning and checked the encryption box.
 
-I think this is a case of the [Dunning-Kreuger effect](https://en.m.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect). I have over estimated my knowledge in this field.
-
-Anyhow, while looking into this encryption debacle I was hoping to run into as best practice, which I have not. The remains option is to ask our favourite autocomplete: chatgpt!
+Anyhow, while looking into this encryption debacle I was hoping to run into as best practice, which I have not. The remains option is to ask our favorite word predictor: chatgpt!
 
 ChatGPT gave me more than I asked for literally. 
 If the LLM generated instructions worked I’ll post them.
@@ -21,10 +19,13 @@ If the LLM generated instructions worked I’ll post them.
 
 In the end I went for a combination of [this guide from Wai Hon](https://whhone.com/posts/arch-linux-full-disk-encryption/), [the official guide](https://wiki.archlinux.org/title/Installation_guide) and ChatGPT.
 
-
+# Attention to details
 Being computer proficient, I thought installing Arch would be a breeze - but the encryption seemed to break everything all the time.
-On the other hand - if I'd been shown a bit more attention to details, this would have been so much faster.
-One issue is that the keymap doesn't seem to load before LUKS decryption, whicg means my special characters are in the wrong place - manged to find them, but it needs fixing.
+On the other hand - if I'd had a bit more attention to details, this would have been so much faster.
+
+# Issues
+The only problem now is that the keymap doesn't seem to load before decryption, which means a bot of hassle when typing passphrase, since it seems to load an English keymap.
+
 
 To-do list:
 - [ ] Make system load keymap before decyption
