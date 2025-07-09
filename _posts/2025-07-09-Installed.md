@@ -1,8 +1,7 @@
-
 ---
 layout: post
-title:  "Installed!"
-date:   2025-07-09 21:11:01 +0200
+title:  "Installed"
+date:   2025-07-09 23:18
 categories: projects
 ---
 
